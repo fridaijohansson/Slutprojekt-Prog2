@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblWelcUser = new System.Windows.Forms.Label();
+            this.tbxTypeBox = new System.Windows.Forms.TextBox();
+            this.btnSend = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.startGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnCloseForm = new System.Windows.Forms.Button();
             this.bestOf3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bestOf6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.besOf9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.btnCloseForm = new System.Windows.Forms.Button();
+            this.lbxActive = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxChatt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblWelcUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Teal;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(267, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome [Username]";
+            this.lblWelcUser.AutoSize = true;
+            this.lblWelcUser.BackColor = System.Drawing.Color.Teal;
+            this.lblWelcUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcUser.ForeColor = System.Drawing.Color.Yellow;
+            this.lblWelcUser.Location = new System.Drawing.Point(267, 45);
+            this.lblWelcUser.Name = "lblWelcUser";
+            this.lblWelcUser.Size = new System.Drawing.Size(286, 32);
+            this.lblWelcUser.TabIndex = 3;
+            this.lblWelcUser.Text = "Welcome [Username]";
             // 
-            // textBox1
+            // tbxTypeBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.textBox1.Location = new System.Drawing.Point(182, 488);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 52);
-            this.textBox1.TabIndex = 4;
+            this.tbxTypeBox.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbxTypeBox.Location = new System.Drawing.Point(182, 488);
+            this.tbxTypeBox.Multiline = true;
+            this.tbxTypeBox.Name = "tbxTypeBox";
+            this.tbxTypeBox.Size = new System.Drawing.Size(398, 52);
+            this.tbxTypeBox.TabIndex = 4;
             // 
-            // button1
+            // btnSend
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(596, 493);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 39);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSend.ForeColor = System.Drawing.Color.Yellow;
+            this.btnSend.Location = new System.Drawing.Point(596, 493);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(57, 39);
+            this.btnSend.TabIndex = 5;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -111,6 +111,30 @@
             this.startGameToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.startGameToolStripMenuItem.Text = "Start a Game";
             // 
+            // bestOf3ToolStripMenuItem
+            // 
+            this.bestOf3ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
+            this.bestOf3ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
+            this.bestOf3ToolStripMenuItem.Name = "bestOf3ToolStripMenuItem";
+            this.bestOf3ToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.bestOf3ToolStripMenuItem.Text = "Best of 3";
+            // 
+            // bestOf6ToolStripMenuItem
+            // 
+            this.bestOf6ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
+            this.bestOf6ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
+            this.bestOf6ToolStripMenuItem.Name = "bestOf6ToolStripMenuItem";
+            this.bestOf6ToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.bestOf6ToolStripMenuItem.Text = "Best of 6";
+            // 
+            // besOf9ToolStripMenuItem
+            // 
+            this.besOf9ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
+            this.besOf9ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
+            this.besOf9ToolStripMenuItem.Name = "besOf9ToolStripMenuItem";
+            this.besOf9ToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.besOf9ToolStripMenuItem.Text = "Best of 9";
+            // 
             // btnCloseForm
             // 
             this.btnCloseForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -122,41 +146,18 @@
             this.btnCloseForm.TabIndex = 26;
             this.btnCloseForm.Text = "X";
             this.btnCloseForm.UseVisualStyleBackColor = true;
+            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
-            // bestOf3ToolStripMenuItem
+            // lbxActive
             // 
-            this.bestOf3ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
-            this.bestOf3ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
-            this.bestOf3ToolStripMenuItem.Name = "bestOf3ToolStripMenuItem";
-            this.bestOf3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bestOf3ToolStripMenuItem.Text = "Best of 3";
-            // 
-            // bestOf6ToolStripMenuItem
-            // 
-            this.bestOf6ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
-            this.bestOf6ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
-            this.bestOf6ToolStripMenuItem.Name = "bestOf6ToolStripMenuItem";
-            this.bestOf6ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bestOf6ToolStripMenuItem.Text = "Best of 6";
-            // 
-            // besOf9ToolStripMenuItem
-            // 
-            this.besOf9ToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
-            this.besOf9ToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
-            this.besOf9ToolStripMenuItem.Name = "besOf9ToolStripMenuItem";
-            this.besOf9ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.besOf9ToolStripMenuItem.Text = "Best of 9";
-            // 
-            // listBox2
-            // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.listBox2.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(5, 68);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(159, 484);
-            this.listBox2.TabIndex = 27;
+            this.lbxActive.BackColor = System.Drawing.Color.Black;
+            this.lbxActive.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbxActive.FormattingEnabled = true;
+            this.lbxActive.ItemHeight = 16;
+            this.lbxActive.Location = new System.Drawing.Point(5, 68);
+            this.lbxActive.Name = "lbxActive";
+            this.lbxActive.Size = new System.Drawing.Size(159, 484);
+            this.lbxActive.TabIndex = 27;
             // 
             // label2
             // 
@@ -169,29 +170,29 @@
             this.label2.TabIndex = 28;
             this.label2.Text = "Users active:";
             // 
-            // textBox2
+            // tbxChatt
             // 
-            this.textBox2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.textBox2.Location = new System.Drawing.Point(182, 80);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(476, 402);
-            this.textBox2.TabIndex = 29;
+            this.tbxChatt.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbxChatt.Location = new System.Drawing.Point(182, 80);
+            this.tbxChatt.Multiline = true;
+            this.tbxChatt.Name = "tbxChatt";
+            this.tbxChatt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxChatt.Size = new System.Drawing.Size(476, 402);
+            this.tbxChatt.TabIndex = 29;
             // 
             // ChattForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(685, 559);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbxChatt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.lbxActive);
             this.Controls.Add(this.btnCloseForm);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.tbxTypeBox);
+            this.Controls.Add(this.lblWelcUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -199,6 +200,7 @@
             this.Name = "ChattForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.ChattForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -209,9 +211,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblWelcUser;
+        private System.Windows.Forms.TextBox tbxTypeBox;
+        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem startGameToolStripMenuItem;
@@ -219,9 +221,9 @@
         private System.Windows.Forms.ToolStripMenuItem bestOf3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bestOf6ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem besOf9ToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lbxActive;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxChatt;
     }
 }
 
