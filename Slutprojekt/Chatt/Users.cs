@@ -46,10 +46,11 @@ namespace Chatt
             get { return _created; }
             set { _created = value; }
         }
-        public IPAddress IP
+        public IPAddress Server
         {
-            get { return _ipAddress; }
-            set { _ipAddress = value; }
+            get { return _server; }
+            set { _server = value; }
         }
+
     }
 }

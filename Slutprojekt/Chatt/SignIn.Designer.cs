@@ -126,7 +126,7 @@
             // 
             this.felmeddelande.AutoSize = true;
             this.felmeddelande.ForeColor = System.Drawing.Color.Yellow;
-            this.felmeddelande.Location = new System.Drawing.Point(284, 112);
+            this.felmeddelande.Location = new System.Drawing.Point(217, 112);
             this.felmeddelande.Name = "felmeddelande";
             this.felmeddelande.Size = new System.Drawing.Size(105, 17);
             this.felmeddelande.TabIndex = 61;

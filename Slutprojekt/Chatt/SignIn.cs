@@ -19,6 +19,7 @@ namespace Chatt
         public SignIn()
         {
             InitializeComponent();
+            felmeddelande.Visible = false;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
