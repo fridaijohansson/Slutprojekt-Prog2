@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
+using System.Net.Sockets;
 
 namespace Chatt
 {
@@ -11,15 +13,17 @@ namespace Chatt
         private string _username;
         private string _created;
         private int _victories;
-        private string _ipAddress;
+        private IPAddress _ipAddress;
+        private IPAddress _server;
 
-        public Users(string username, string created,string ipAddress)
+        public Users(string username, string created,IPAddress ipAddress, IPAddress server)
         {
             this._username = username;
             this._created = created;
             this._ipAddress = ipAddress;
+            this._server = server;
         }
-        public Users(string username, string created, string ipAddress, int victories)
+        public Users(string username, string created, IPAddress ipAddress, int victories)
         {
             this._username = username;
             this._created = created;
@@ -27,14 +31,25 @@ namespace Chatt
             this._victories = victories;
         }
 
-        public int Username
+        public string Username
         {
-            get { return Username; }
+            get { return _username; }
+            set { _username = value; }
         }
         public int Victories
         {
-            get { return Victories; }
-            set { Victories = value; }
+            get { return _victories; }
+            set { _victories = value; }
+        }
+        public string Created
+        {
+            get { return _created; }
+            set { _created = value; }
+        }
+        public IPAddress IP
+        {
+            get { return _ipAddress; }
+            set { _ipAddress = value; }
         }
     }
 }

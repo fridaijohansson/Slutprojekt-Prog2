@@ -17,68 +17,64 @@ namespace Chatt
     public partial class Connect : Form
     {
         public static List<Users> userlist = new List<Users>();
-        TcpClient client = new TcpClient();
-        int port = 12345;
+        bool added;
         public Connect()
         {
             InitializeComponent();
-            client.NoDelay = true;
 
+            felmeddelande.Visible = false;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
             try
             {
-                if (!client.Connected)
-                {
-                    TryConnect();
-                    ChattForm form = new ChattForm();
-                    form.ShowDialog();
-                    this.Close();
-                }
-                
-                
-            }
-            catch
-            {
-                felmeddelande.Text = "kunde inte ansluta";
-            }
-            
-           
-
-
-        }
-
-        public async void TryConnect()
-        {
-            try
-            {
                 IPAddress server = IPAddress.Parse(tbxServer.Text);
-                
-                await client.ConnectAsync(server, port);
                 string username = tbxUsername.Text;
                 string created = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds().ToString();
-                //username metod check i lista ifall den redan existerar
-                foreach(Users user in userlist)
+
+                Users defaultUser = new Users("default", "0000", IPAddress.Loopback, server);
+                userlist.Add(defaultUser);
+
+                foreach (Users user in userlist)
                 {
-                    if(username.Equals(user.Username))
+
+                    if (username.Equals(user.Username))
                     {
                         felmeddelande.Text = "Try a different username";
                     }
+                    else if(username.Equals(""))
+                    {
+                        felmeddelande.Text = "You need a username";
+
+                    }
                     else
                     {
-                        Users u = new Users(username, created, server.ToString());
+                        added = true;
+                        MessageBox.Show("Added: " + username + " " + created + " " + IPAddress.Loopback,
+                        "text", MessageBoxButtons.OK);
+                        Users u = new Users(username, created, IPAddress.Loopback, server);
                         userlist.Add(u);
 
                     }
                 }
+
+                if(added == true)
+                {
+                   
+                }
+              
             }
             catch(Exception error)
             {
-                felmeddelande.Text = error + "Kunde inte ansluta";
+                felmeddelande.Text = "kunde inte ansluta";
+                MessageBox.Show(error.Message,"error", MessageBoxButtons.OK);
             }
+            
+   
         }
+
+
 
         private void btnCloseForm_Click(object sender, EventArgs e)
         {

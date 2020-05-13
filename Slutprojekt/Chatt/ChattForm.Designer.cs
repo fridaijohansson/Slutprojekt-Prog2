@@ -41,6 +41,8 @@
             this.lbxActive = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbxChatt = new System.Windows.Forms.TextBox();
+            this.tbxIP = new System.Windows.Forms.TextBox();
+            this.btnConnect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.lblWelcUser.BackColor = System.Drawing.Color.Teal;
             this.lblWelcUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcUser.ForeColor = System.Drawing.Color.Yellow;
-            this.lblWelcUser.Location = new System.Drawing.Point(267, 45);
+            this.lblWelcUser.Location = new System.Drawing.Point(271, 123);
             this.lblWelcUser.Name = "lblWelcUser";
             this.lblWelcUser.Size = new System.Drawing.Size(286, 32);
             this.lblWelcUser.TabIndex = 3;
@@ -76,6 +78,7 @@
             this.btnSend.TabIndex = 5;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // pictureBox1
             // 
@@ -173,12 +176,30 @@
             // tbxChatt
             // 
             this.tbxChatt.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.tbxChatt.Location = new System.Drawing.Point(182, 80);
+            this.tbxChatt.Location = new System.Drawing.Point(182, 158);
             this.tbxChatt.Multiline = true;
             this.tbxChatt.Name = "tbxChatt";
             this.tbxChatt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbxChatt.Size = new System.Drawing.Size(476, 402);
+            this.tbxChatt.Size = new System.Drawing.Size(476, 324);
             this.tbxChatt.TabIndex = 29;
+            // 
+            // tbxIP
+            // 
+            this.tbxIP.Location = new System.Drawing.Point(353, 68);
+            this.tbxIP.Name = "tbxIP";
+            this.tbxIP.Size = new System.Drawing.Size(71, 22);
+            this.tbxIP.TabIndex = 30;
+            this.tbxIP.Text = "127.0.0.1";
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(442, 68);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 31;
+            this.btnConnect.Text = "anslut";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // ChattForm
             // 
@@ -186,6 +207,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(685, 559);
+            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.tbxIP);
             this.Controls.Add(this.tbxChatt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbxActive);
@@ -224,6 +247,8 @@
         private System.Windows.Forms.ListBox lbxActive;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbxChatt;
+        private System.Windows.Forms.TextBox tbxIP;
+        private System.Windows.Forms.Button btnConnect;
     }
 }
 
