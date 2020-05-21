@@ -33,8 +33,6 @@
             this.lbxActive = new System.Windows.Forms.ListBox();
             this.lblWelcUser = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbxGameList = new System.Windows.Forms.ListBox();
             this.btnStartServer = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -83,7 +81,7 @@
             this.lblWelcUser.BackColor = System.Drawing.Color.Teal;
             this.lblWelcUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcUser.ForeColor = System.Drawing.Color.Yellow;
-            this.lblWelcUser.Location = new System.Drawing.Point(363, 33);
+            this.lblWelcUser.Location = new System.Drawing.Point(377, 40);
             this.lblWelcUser.Name = "lblWelcUser";
             this.lblWelcUser.Size = new System.Drawing.Size(98, 32);
             this.lblWelcUser.TabIndex = 30;
@@ -97,28 +95,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(503, 494);
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.label1.Location = new System.Drawing.Point(696, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 20);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Users in game:";
-            // 
-            // lbxGameList
-            // 
-            this.lbxGameList.BackColor = System.Drawing.Color.Black;
-            this.lbxGameList.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.lbxGameList.FormattingEnabled = true;
-            this.lbxGameList.ItemHeight = 16;
-            this.lbxGameList.Location = new System.Drawing.Point(679, 75);
-            this.lbxGameList.Name = "lbxGameList";
-            this.lbxGameList.Size = new System.Drawing.Size(159, 452);
-            this.lbxGameList.TabIndex = 39;
             // 
             // btnStartServer
             // 
@@ -139,7 +115,7 @@
             this.sparaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(852, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(678, 28);
             this.menuStrip1.TabIndex = 42;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -171,10 +147,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(852, 535);
+            this.ClientSize = new System.Drawing.Size(678, 535);
             this.Controls.Add(this.btnStartServer);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbxGameList);
             this.Controls.Add(this.tbxLog);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbxActive);
@@ -199,8 +173,6 @@
         private System.Windows.Forms.ListBox lbxActive;
         private System.Windows.Forms.Label lblWelcUser;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lbxGameList;
         private System.Windows.Forms.Button btnStartServer;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.MenuStrip menuStrip1;

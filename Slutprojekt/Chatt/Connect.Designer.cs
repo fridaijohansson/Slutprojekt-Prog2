@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCloseForm = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.tbxUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,19 +38,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCloseForm
-            // 
-            this.btnCloseForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCloseForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseForm.ForeColor = System.Drawing.Color.Yellow;
-            this.btnCloseForm.Location = new System.Drawing.Point(389, 0);
-            this.btnCloseForm.Name = "btnCloseForm";
-            this.btnCloseForm.Size = new System.Drawing.Size(28, 23);
-            this.btnCloseForm.TabIndex = 66;
-            this.btnCloseForm.Text = "X";
-            this.btnCloseForm.UseVisualStyleBackColor = true;
-            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
             // label10
             // 
@@ -148,7 +134,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(418, 271);
-            this.Controls.Add(this.btnCloseForm);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.label3);
@@ -157,7 +142,7 @@
             this.Controls.Add(this.tbxServer);
             this.Controls.Add(this.felmeddelande);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Connect";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -166,8 +151,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCloseForm;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tbxUsername;
         private System.Windows.Forms.Label label3;
