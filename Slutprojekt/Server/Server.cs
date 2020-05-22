@@ -26,6 +26,7 @@ namespace Server
 
         int kPort = 12344; //server som klient, när servern skickar meddelanden
         int sPort = 12345; //servern lyssnar på denna porten
+        //egentligen meningslöst men testade för att se ifall det skulle lösa problemet med fler anslutna klienter.
 
         string öppnadFil = null;
         public Server()
@@ -74,8 +75,9 @@ namespace Server
                 klienter.Add(klient);
                 lbxActive.Items.Add(klient.Client.RemoteEndPoint.ToString());
 
-
-                await server.ConnectAsync("127.0.0.1", kPort);
+                //Jag tror det är denna koden som är fel enligt catch funktionen.
+                //Visste inte vad jag skulle skriva för ip adress
+                await server.ConnectAsync("127.0.0.1", kPort); 
                 
 
                 Läsning(klient);
@@ -95,6 +97,7 @@ namespace Server
         /// Meddelandet översätts till en string från byte och visar det i serverns logg.
         /// SkickaTillKlienter ska skicka det inkommande meddelandet till alla klienter i chatten.
         /// Läsningen anropas igen för att fortsätta lyssna på klienten.
+        /// Vet fortfarande inte hur jag skickar med klienternas information, som användarnamn.
         /// </summary>
         /// <param name="k"></param>
         private async void Läsning(TcpClient k)
@@ -123,7 +126,7 @@ namespace Server
         /// Det ankommande meddelandet från klienten för med till denna funktionen som går igenom varje 
         /// klient i klientlistan för att skicka ut meddelandet till alla.
         /// Det visas sedan i serverns logg. 
-        /// (vet inte varför \r\n inte fungerar på kodrad 139 för nästa data som läggs till i loggen hamnar på samma rad...)
+        /// (vet inte varför \r\n inte fungerar på kodrad 142 för nästa data som läggs till i loggen hamnar på samma rad...)
         /// </summary>
         /// <param name="buffert"></param>
         private async void SkickaTillKlienter(byte[] buffert)
